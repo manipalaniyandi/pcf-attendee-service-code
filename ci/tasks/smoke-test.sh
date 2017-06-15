@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -ex
-
+chmod a+x ./some-test.sh
 apt-get update && apt-get install -y curl
 
 if [ -z $ATTENDEE_SERVICE_URL ]; then

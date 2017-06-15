@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -ex
-
+chmod a+x ./test.sh
 pushd attendee-service-source
   echo "Fetching Dependencies"
   ./mvnw clean compile > /dev/null
