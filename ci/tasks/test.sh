@@ -1,5 +1,4 @@
 #!/bin/bash
-chmod +x test.sh
 
 set -ex
 pushd attendee-service-source
