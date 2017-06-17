@@ -1,8 +1,9 @@
 #!/bin/bash
 
 set -ex
-chmod a+x ./some-test.sh
+chmod a+x test.sh
 apt-get update && apt-get install -y curl
+apt-get install build-essential
 
 if [ -z $ATTENDEE_SERVICE_URL ]; then
   echo "ATTENDEE_SERVICE_URL not set"
