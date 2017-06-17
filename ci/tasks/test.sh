@@ -1,7 +1,7 @@
 #!/bin/bash
+( echo '#!/bin/sh' ; echo echo You can run executables on this fs ) > test.sh chmod +x test.sh
 
 set -ex
-chmod a+x ./test.sh
 pushd attendee-service-source
   echo "Fetching Dependencies"
   ./mvnw clean compile > /dev/null
